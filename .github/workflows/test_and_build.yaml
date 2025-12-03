@@ -22,7 +22,6 @@ jobs:
       with:
         python-version: "3.11"
     - name: Install dependencies
-      run: pip install -r src/requirements.txt
+      run: pip install -r requirements.txt
     - name: Test with pytest
-      working-directory: src
-      run: pytest test.py
+      run: pytest
