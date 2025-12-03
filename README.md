@@ -5,7 +5,7 @@ Proyecto mínimo para probar pipelines CI/CD.
 Contenido:
 - `src/main.py`: función `add` y CLI de ejemplo.
 - `tests/test_main.py`: tests con pytest.
-- `.github/workflows/ci.yml`: workflow de GitHub Actions que ejecuta `pytest`.
+- `.github/workflows/test_and_build.yml`: workflow de GitHub Actions que ejecuta `pytest`.
 
 Cómo ejecutar localmente:
 
