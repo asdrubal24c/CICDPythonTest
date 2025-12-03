@@ -23,7 +23,7 @@ jobs:
         python-version: "3.11"
     - name: Install dependencies
       run: pip install -r requirements.txt
+    - name: Check linting
+      run: ruff check .
     - name: Test with pytest
-      # Ensure repository root is on PYTHONPATH so `import src` resolves to ./src
-      # DO NOT set PYTHONPATH=src (that makes Python look for `src` inside ./src)
       run: PYTHONPATH=. pytest
