@@ -14,6 +14,10 @@ def test_add_floats():
 
 def test_cli_add():
     # Run the module as a script: python -m src.main add 2 3
-    p = subprocess.run([sys.executable, "-m", "src.main", "add", "2", "3"], capture_output=True, text=True)
+    p = subprocess.run(
+        [sys.executable, "-m", "src.main", "add", "2", "3"],
+        capture_output=True,
+        text=True,
+    )
     assert p.returncode == 0
     assert p.stdout.strip() == "5"
